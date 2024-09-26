@@ -37,17 +37,17 @@ class LibraryTest {
         assertTrue(book.isAvailable());
 
     }
-//
-//
-//    @Test
-//    void testViewAvailableBooks() {
-//        Book book1 = new Book("12345", "Java Programming", "John Doe", 2020);
-//        Book book2 = new Book("67890", "Python Programming", "Jane Smith", 2021);
-//
-//        library.addBook(book1);
-//        library.addBook(book2);
-//
-//        String expectedOutput = "ISBN: 12345, Title: Java Programming\nISBN: 67890, Title: Python Programming";
-//        assertEquals(expectedOutput, library.viewAvailableBooks());
-//    }
+
+
+    @Test
+    void testViewAvailableBooks() {
+        Book book1 = new Book("12345", "Java Programming", "John Doe", 2020);
+        Book book2 = new Book("67890", "Python Programming", "Jane Smith", 2021);
+
+        library.addBook(book1);
+        library.addBook(book2);
+
+        String expectedOutput = "ISBN: 12345, Title: Java Programming\nISBN: 67890, Title: Python Programming";
+        assertEquals(expectedOutput, library.viewAvailableBooks());
+    }
 }
