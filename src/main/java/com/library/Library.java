@@ -26,14 +26,14 @@ public class Library {
         book.borrowBook();
     }
 
-//    public void returnBook(String isbn) {
-//        Book book = books.get(isbn);
-//        if (book == null || book.isAvailable()) {
-//            throw new IllegalArgumentException("Invalid return attempt.");
-//        }
-//        book.returnBook();
-//    }
-//
+    public void returnBook(String isbn) {
+        Book book = books.get(isbn);
+        if (book == null || book.isAvailable()) {
+            throw new IllegalArgumentException("Invalid return attempt.");
+        }
+        book.returnBook();
+    }
+
     public String viewAvailableBooks() {
         return books.values().stream()
                 .filter(Book::isAvailable)

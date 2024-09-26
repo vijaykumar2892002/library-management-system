@@ -16,7 +16,7 @@ public class Main {
             switch (choice) {
                 case 1 -> addBook();
                 case 2 -> borrowBook();
-//                case 3 -> returnBook();
+                case 3 -> returnBook();
 //                case 4 -> viewAvailableBooks();
                 case 5 -> exit = true;
                 default -> System.out.println("Invalid option, please try again.");
@@ -87,17 +87,17 @@ public class Main {
             System.out.println(e.getMessage());
         }
     }
-//
-//    private static void returnBook() {
-//        System.out.print("Enter ISBN of the book to return: ");
-//        String isbn = scanner.nextLine();
-//        try {
-//            library.returnBook(isbn);
-//            System.out.println("Book returned successfully.");
-//        } catch (Exception e) {
-//            System.out.println(e.getMessage());
-//        }
-//    }
+
+    private static void returnBook() {
+        System.out.print("Enter ISBN of the book to return: ");
+        String isbn = scanner.nextLine();
+        try {
+            library.returnBook(isbn);
+            System.out.println("Book returned successfully.");
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+    }
 //
 //    private static void viewAvailableBooks() {
 //        System.out.println("Available Books:");
