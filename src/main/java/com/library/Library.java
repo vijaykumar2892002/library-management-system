@@ -34,5 +34,10 @@ public class Library {
         book.returnBook();
     }
 
-
+    public String viewAvailableBooks() {
+        return books.values().stream()
+                .filter(Book::isAvailable)
+                .map(book -> "ISBN: " + book.getIsbn() + ", Title: " + book.getTitle())
+                .collect(Collectors.joining("\n"));
+    }
 }
