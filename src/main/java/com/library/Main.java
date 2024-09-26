@@ -17,7 +17,7 @@ public class Main {
                 case 1 -> addBook();
                 case 2 -> borrowBook();
                 case 3 -> returnBook();
-//                case 4 -> viewAvailableBooks();
+                case 4 -> viewAvailableBooks();
                 case 5 -> exit = true;
                 default -> System.out.println("Invalid option, please try again.");
             }
@@ -98,9 +98,9 @@ public class Main {
             System.out.println(e.getMessage());
         }
     }
-//
-//    private static void viewAvailableBooks() {
-//        System.out.println("Available Books:");
-//        System.out.println(library.viewAvailableBooks());
-//    }
+
+    private static void viewAvailableBooks() {
+        System.out.println("Available Books:");
+        System.out.println(library.viewAvailableBooks());
+    }
 }
