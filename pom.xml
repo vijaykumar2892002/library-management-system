@@ -8,9 +8,7 @@
     <artifactId>Library_Management_System</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
-    <modules>
-        <module>test-report</module>
-    </modules>
+    
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
