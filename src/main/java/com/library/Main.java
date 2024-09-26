@@ -15,7 +15,7 @@ public class Main {
 
             switch (choice) {
                 case 1 -> addBook();
-//                case 2 -> borrowBook();
+                case 2 -> borrowBook();
 //                case 3 -> returnBook();
 //                case 4 -> viewAvailableBooks();
                 case 5 -> exit = true;
@@ -77,16 +77,16 @@ public class Main {
     }
 
 
-//    private static void borrowBook() {
-//        System.out.print("Enter ISBN of the book to borrow: ");
-//        String isbn = scanner.nextLine();
-//        try {
-//            library.borrowBook(isbn);
-//            System.out.println("Book borrowed successfully.");
-//        } catch (Exception e) {
-//            System.out.println(e.getMessage());
-//        }
-//    }
+    private static void borrowBook() {
+        System.out.print("Enter ISBN of the book to borrow: ");
+        String isbn = scanner.nextLine();
+        try {
+            library.borrowBook(isbn);
+            System.out.println("Book borrowed successfully.");
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+    }
 //
 //    private static void returnBook() {
 //        System.out.print("Enter ISBN of the book to return: ");

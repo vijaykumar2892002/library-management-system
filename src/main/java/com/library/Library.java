@@ -18,14 +18,14 @@ public class Library {
         books.put(book.getIsbn(), book);
     }
 
-//    public void borrowBook(String isbn) {
-//        Book book = books.get(isbn);
-//        if (book == null || !book.isAvailable()) {
-//            throw new IllegalArgumentException("Book is not available.");
-//        }
-//        book.borrowBook();
-//    }
-//
+    public void borrowBook(String isbn) {
+        Book book = books.get(isbn);
+        if (book == null || !book.isAvailable()) {
+            throw new IllegalArgumentException("Book is not available.");
+        }
+        book.borrowBook();
+    }
+
 //    public void returnBook(String isbn) {
 //        Book book = books.get(isbn);
 //        if (book == null || book.isAvailable()) {

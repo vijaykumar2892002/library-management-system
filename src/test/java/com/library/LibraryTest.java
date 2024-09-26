@@ -20,14 +20,14 @@ class LibraryTest {
         assertEquals("ISBN: 12345, Title: Java Programming", library.viewAvailableBooks());
     }
 
-//    @Test
-//    void testBorrowBook() {
-//        Book book = new Book("12345", "Java Programming", "John Doe", 2020);
-//        library.addBook(book);
-//        library.borrowBook("12345");
-//        assertThrows(IllegalArgumentException.class, () -> library.borrowBook("12345"));
-//    }
-//
+    @Test
+    void testBorrowBook() {
+        Book book = new Book("12345", "Java Programming", "John Doe", 2020);
+        library.addBook(book);
+        library.borrowBook("12345");
+        assertThrows(IllegalArgumentException.class, () -> library.borrowBook("12345"));
+    }
+
 //    @Test
 //    void testReturnBook() {
 //        Book book = new Book("12345", "Java Programming", "John Doe", 2020);
