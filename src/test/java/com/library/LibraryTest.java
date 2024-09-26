@@ -21,6 +21,25 @@ class LibraryTest {
     }
 
     @Test
+    void testBorrowBook() {
+        Book book = new Book("12345", "Java Programming", "John Doe", 2020);
+        library.addBook(book);
+        library.borrowBook("12345");
+        assertThrows(IllegalArgumentException.class, () -> library.borrowBook("12345"));
+    }
+
+    @Test
+    void testReturnBook() {
+        Book book = new Book("12345", "Java Programming", "John Doe", 2020);
+        library.addBook(book);
+        library.borrowBook("12345");
+        library.returnBook("12345");
+        assertTrue(book.isAvailable());
+
+    }
+
+
+    @Test
     void testViewAvailableBooks() {
         Book book1 = new Book("12345", "Java Programming", "John Doe", 2020);
         Book book2 = new Book("67890", "Python Programming", "Jane Smith", 2021);
